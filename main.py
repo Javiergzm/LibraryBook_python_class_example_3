@@ -5,10 +5,10 @@ os.system("clear")
 
 from module import LibraryBook
 
-# TODO 1: Book titles are not showing correctly in Section 1.
-# TODO 2: The checkout method crashes the program.
-# TODO 3: Books can be checked out even if they are already checked out.
-# TODO 4: The status method is not printing anything.
+# TODO 1: Book titles are not showing correctly in Section 1. DONE
+# TODO 2: The checkout method crashes the program. DONE
+# TODO 3: Books can be checked out even if they are already checked out. DONE
+# TODO 4: The status method is not printing anything. DONE
 
 # Create book instances
 b1 = LibraryBook("1984", "George Orwell")
@@ -17,13 +17,13 @@ b2 = LibraryBook("The Hobbit", "J.R.R. Tolkien")
 print("SECTION 1\n")
 print("Title:", b1.title)
 print("Author:", b1.author)
-b1.status
+b1.status()
 
 print()
 
 print("Title:", b2.title)
 print("Author:", b2.author)
-b2.status
+b2.status()
 
 print("-----------------------------------\n")
 

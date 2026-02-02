@@ -1,8 +1,8 @@
 # module.py
 
-class LibraryBook
+class LibraryBook():
     def __init__(self, title, author):
-        self.title = "title"
+        self.title = title
         self.author = author
         self.available = True
 
@@ -10,9 +10,9 @@ class LibraryBook
         print(f"{self.title} by {self.author} is available:", self.available)
 
     def checkout(self):
-        if self.available = True:
-            self.available = False
+        if self.available == True:
             print("Book checked out.")
+            self.available = False
 
     def return_book(self):
         self.available = True
